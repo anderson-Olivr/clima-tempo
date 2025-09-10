@@ -10,39 +10,29 @@
         href="https://fonts.googleapis.com/css2?family=Mansalva&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oregano:ital@0;1&family=Pixelify+Sans:wght@400..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
     <title>Clima Tempo</title>
 </head>
 
 <body>
-    <audio id="bg-music" loop>
-        <source src="img/audio/background-audio.mp3" type="audio/mp3">
-    </audio>
-
-    <button class="sound-bt" id="sound-btn">🔊</button>
-
-    <video autoplay muted loop class="bg-video">
-        <source src="img/backgrounds/background-video.mp4" type="video/mp4">
-        Seu navegador não suporta vídeo em background.
-    </video>
     <div class="caixa-maior">
         <input class="input-cidade" aria-placeholder="Digite o nome da cidade">
         <button class="btn-buscar" onclick="clica_bt()">
             <img class="img-buscar" src="https://www.svgrepo.com/show/488200/find.svg" alt="">
         </button>
-
-        <div class="caixa-media">
-            <h2 class="cidade">Tempo em São Paulo</h2>
-            <p class="temp">21°C</p>
         
+        <div class="caixa-media">
+            <h2 class="cidade">Tempo em ...</h2>
+            <p class="temp">°C</p>
+            
             <div class="caixa-menor">
                 <img class="img-previsao" src="https://openweathermap.org/img/wn/04n.png" alt="Ícone do clima">
-                <p class="texto-previsao">Nublado</p>
+                <p class="texto-previsao"></p>
             </div>
-
-            <p class="umidade">Umidade: 76%</p>
+            
+            <p class="umidade">Umidade: %</p>
         </div>
     </div>
 </body>
+<script src="script.js"></script>
 
 </html>
